@@ -1,0 +1,20 @@
+{
+  "dealers": [
+    {
+      "id": 1,
+      "location": "Brooklyn, NY",
+      "trims": [
+        { "name": "ls" },
+        { "name": "ls-f-sport" },
+        { "name": "ls-hybrid" }
+      ]
+    },
+    {
+      "id": 2,
+      "location": "Queens, NY",
+      "trims": [{ "name": "ls" }, { "name": "ls-hybrid" }]
+    },
+    { "id": 3, "location": "Newark, NJ", "trims": [{ "name": "ls-f-sport" }] },
+    { "id": 4, "location": "Plainfeld, NJ", "trims": [] }
+  ]
+}
