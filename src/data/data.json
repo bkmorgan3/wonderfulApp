@@ -7,14 +7,26 @@
         { "name": "ls" },
         { "name": "ls-f-sport" },
         { "name": "ls-hybrid" }
-      ]
+      ],
+      "position": { "lat": 40.6782, "lng": -73.9442 }
     },
     {
       "id": 2,
       "location": "Queens, NY",
-      "trims": [{ "name": "ls" }, { "name": "ls-hybrid" }]
+      "trims": [{ "name": "ls" }, { "name": "ls-hybrid" }],
+      "position": { "lat": 40.7282, "lng": -73.7949 }
     },
-    { "id": 3, "location": "Newark, NJ", "trims": [{ "name": "ls-f-sport" }] },
-    { "id": 4, "location": "Plainfeld, NJ", "trims": [] }
+    {
+      "id": 3,
+      "location": "Newark, NJ",
+      "trims": [{ "name": "ls-f-sport" }],
+      "position": { "lat": 40.7357, "lng": -74.1724 }
+    },
+    {
+      "id": 4,
+      "location": "Plainfeld, NJ",
+      "trims": [],
+      "position": { "lat": 40.6337, "lng": -74.4074 }
+    }
   ]
 }
