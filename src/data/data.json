@@ -4,22 +4,45 @@
       "id": 1,
       "location": "Brooklyn, NY",
       "trims": [
-        { "name": "ls" },
-        { "name": "ls-f-sport" },
-        { "name": "ls-hybrid" }
+        {
+          "name": "ls",
+          "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls_oyodi8.jpg"
+        },
+        {
+          "name": "ls-f-sport",
+          "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-f-sport_mypotn.jpg"
+        },
+        {
+          "name": "ls-hybrid",
+          "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-hybrid_cudrjb.jpg"
+        }
       ],
       "position": { "lat": 40.6782, "lng": -73.9442 }
     },
     {
       "id": 2,
       "location": "Queens, NY",
-      "trims": [{ "name": "ls" }, { "name": "ls-hybrid" }],
+      "trims": [
+        {
+          "name": "ls",
+          "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls_oyodi8.jpg"
+        },
+        {
+          "name": "ls-hybrid",
+          "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-hybrid_cudrjb.jpg"
+        }
+      ],
       "position": { "lat": 40.7282, "lng": -73.7949 }
     },
     {
       "id": 3,
       "location": "Newark, NJ",
-      "trims": [{ "name": "ls-f-sport" }],
+      "trims": [
+        {
+          "name": "ls-f-sport",
+          "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-f-sport_mypotn.jpg"
+        }
+      ],
       "position": { "lat": 40.7357, "lng": -74.1724 }
     },
     {

@@ -1,27 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   GoogleMap,
   withScriptjs,
   withGoogleMap,
   Marker,
+  InfoWindow,
 } from 'react-google-maps';
 
 import data from './data/data.json';
-console.log('data', data);
+import DealerInfo from './DealerInfo';
+
+console.log(data);
 
 function Map() {
+  const [dealer, setDealer] = useState(null);
   return (
-    <GoogleMap defaultZoom={10} defaultCenter={{ lat: 40.7831, lng: -73.9712 }}>
-      {data.dealers.map((d) => (
-        <Marker
-          key={d.id}
-          position={{
-            lat: d.position.lat,
-            lng: d.position.lng,
-          }}
-        />
-      ))}
-    </GoogleMap>
+    <div className="map-area">
+      <div>
+        <GoogleMap
+          defaultZoom={10}
+          defaultCenter={{ lat: 40.7831, lng: -73.9712 }}
+        >
+          {data.dealers.map((d) => (
+            <Marker
+              key={d.id}
+              position={{
+                lat: d.position.lat,
+                lng: d.position.lng,
+              }}
+              onClick={() => {
+                setDealer(d);
+              }}
+            />
+          ))}
+          {dealer && (
+            <InfoWindow
+              position={{
+                lat: dealer.position.lat,
+                lng: dealer.position.lng,
+              }}
+            >
+              <div>{dealer.location}</div>
+            </InfoWindow>
+          )}
+        </GoogleMap>
+      </div>
+      <div>
+        {dealer && (
+          <DealerInfo location={dealer.location} trims={dealer.trims} />
+        )}
+      </div>
+    </div>
   );
 }
 

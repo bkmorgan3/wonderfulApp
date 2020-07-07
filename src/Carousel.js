@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 import imageOne from './assets/ls-f-sport.jpg';
