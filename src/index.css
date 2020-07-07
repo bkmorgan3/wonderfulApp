@@ -70,19 +70,16 @@ code {
 .map-container {
   display: flex;
   width: 50%;
-  margin-left: 30px;
-  /* border: 3px solid red; */
 }
 
 .mapdiv {
   width: 700px;
   height: 100%;
-  /* border: 3px solid gray; */
 }
 
 .map-area {
   display: flex;
-  /* border: 3px solid purple; */
+
   width: 600px;
 }
 

@@ -3,13 +3,13 @@ import React from 'react';
 const DealerInfo = (props) => {
   console.log('props', props);
   return (
-    <div style={{ border: '2px solid blue' }}>
+    <div>
       <h4>Availability for {props.location}</h4>
-      <div style={{ border: '2px dotted red' }}>
+      <div>
         {props.trims.map((t) => (
           <div
             style={{
-              border: '2px solid green',
+              // border: '2px solid green',
               margin: '10px',
               display: 'flex',
             }}
