@@ -77,7 +77,7 @@ code {
 .mapdiv {
   width: 700px;
   height: 100%;
-  border: 3px solid gray;
+  /* border: 3px solid gray; */
 }
 
 .map-area {
@@ -88,7 +88,7 @@ code {
 
 .details {
   font-family: 'Roboto', sans-serif;
-  border: 1px solid red;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,7 +103,4 @@ code {
   height: 30px;
   font-family: 'Roboto', sans-serif;
   border-radius: 3px;
-}
-
-.request-btn:hover {
 }

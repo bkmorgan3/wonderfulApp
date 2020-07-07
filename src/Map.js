@@ -10,8 +10,6 @@ import {
 import data from './data/data.json';
 import DealerInfo from './DealerInfo';
 
-console.log(data);
-
 function Map() {
   const [dealer, setDealer] = useState(null);
   return (
