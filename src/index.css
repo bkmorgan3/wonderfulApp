@@ -85,3 +85,25 @@ code {
   /* border: 3px solid purple; */
   width: 600px;
 }
+
+.details {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: baseline;
+}
+
+.request-btn {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+}
+
+.request-btn:hover {
+}

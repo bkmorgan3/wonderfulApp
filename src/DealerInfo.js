@@ -21,19 +21,10 @@ const DealerInfo = (props) => {
                 alt="car pic"
               />
             </div>
-            <div className="details" style={{ border: '1px dotted orange' }}>
+            <div className="details">
               <h3>2020 {t.name.toUpperCase()}</h3>
-              <p>Starting at $PRICE</p>
-              <button
-                style={{
-                  backgroundColor: '#000',
-                  color: '#fff',
-                  width: '100%',
-                  height: '30px',
-                }}
-              >
-                Request Quote
-              </button>
+              <p>Starting at {t.price}</p>
+              <button className="request-btn">Request Quote</button>
             </div>
           </div>
         ))}

@@ -47,7 +47,11 @@ function Map() {
       </div>
       <div>
         {dealer && (
-          <DealerInfo location={dealer.location} trims={dealer.trims} />
+          <DealerInfo
+            location={dealer.location}
+            trims={dealer.trims}
+            price={dealer.price}
+          />
         )}
       </div>
     </div>
