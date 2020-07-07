@@ -49,6 +49,7 @@ function Map() {
             location={dealer.location}
             trims={dealer.trims}
             price={dealer.price}
+            id={dealer.id}
           />
         )}
       </div>

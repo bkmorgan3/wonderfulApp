@@ -7,17 +7,20 @@
         {
           "name": "ls",
           "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls_oyodi8.jpg",
-          "price": "$75,450"
+          "price": "$75,450",
+          "id": 10
         },
         {
           "name": "ls-f-sport",
           "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-f-sport_mypotn.jpg",
-          "price": "$81,450"
+          "price": "$81,450",
+          "id": 11
         },
         {
           "name": "ls-hybrid",
           "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-hybrid_cudrjb.jpg",
-          "price": "$80,010"
+          "price": "$80,010",
+          "id": 12
         }
       ],
       "position": { "lat": 40.6782, "lng": -73.9442 }
@@ -29,12 +32,14 @@
         {
           "name": "ls",
           "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls_oyodi8.jpg",
-          "price": "$75,450"
+          "price": "$75,450",
+          "id": 10
         },
         {
           "name": "ls-hybrid",
           "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-hybrid_cudrjb.jpg",
-          "price": "$80,010"
+          "price": "$80,010",
+          "id": 12
         }
       ],
       "position": { "lat": 40.7282, "lng": -73.7949 }
@@ -46,7 +51,8 @@
         {
           "name": "ls-f-sport",
           "image": "https://res.cloudinary.com/freeluna/image/upload/v1594069871/products/ls-f-sport_mypotn.jpg",
-          "price": "$81,450"
+          "price": "$81,450",
+          "id": 11
         }
       ],
       "position": { "lat": 40.7357, "lng": -74.1724 }

@@ -9,6 +9,7 @@ const DealerInfo = (props) => {
           <div>
             {props.trims.map((t) => (
               <div
+                key={t.id}
                 style={{
                   margin: '10px',
                   display: 'flex',
