@@ -40,11 +40,3 @@ const DealerInfo = (props) => {
 };
 
 export default DealerInfo;
-
-//         ) : (
-//         <div>
-//           <h4>There are no options for {props.location}</h4>
-//         </div>
-//       )
-//   }
-// </div>
