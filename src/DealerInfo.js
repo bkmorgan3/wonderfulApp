@@ -31,7 +31,9 @@ const DealerInfo = (props) => {
           </div>
         </div>
       ) : (
-        <div>NO</div>
+        <div>
+          <h4>There are no options for {props.location}</h4>
+        </div>
       )}
     </div>
   );
