@@ -101,3 +101,7 @@ code {
   font-family: 'Roboto', sans-serif;
   border-radius: 3px;
 }
+
+.car-container {
+  height: 300px;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const DealerInfo = (props) => {
   return (
-    <div>
+    <div className="car-container">
       {props.trims.length ? (
         <div>
           <h4>Availability for {props.location}</h4>
