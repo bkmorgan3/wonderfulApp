@@ -8,10 +8,9 @@ import {
 } from 'react-google-maps';
 
 import data from './data/data.json';
-import DealerInfo from './DealerInfo';
 
-function Map() {
-  const [dealer, setDealer] = useState(null);
+function Map(props) {
+  console.log('Mapprops', props);
   return (
     <div className="map-area">
       <div>
@@ -27,31 +26,11 @@ function Map() {
                 lng: d.position.lng,
               }}
               onClick={() => {
-                setDealer(d);
+                props.setDealer(d);
               }}
             />
           ))}
-          {dealer && (
-            <InfoWindow
-              position={{
-                lat: dealer.position.lat,
-                lng: dealer.position.lng,
-              }}
-            >
-              <div>{dealer.location}</div>
-            </InfoWindow>
-          )}
         </GoogleMap>
-      </div>
-      <div>
-        {dealer && (
-          <DealerInfo
-            location={dealer.location}
-            trims={dealer.trims}
-            price={dealer.price}
-            id={dealer.id}
-          />
-        )}
       </div>
     </div>
   );
