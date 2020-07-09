@@ -9,6 +9,7 @@ import {
 import data from './data/data.json';
 
 function Map(props) {
+  const {setDealer} = props;
   return (
     <div className="map-area">
       <div>
@@ -24,7 +25,7 @@ function Map(props) {
                 lng: d.position.lng,
               }}
               onClick={() => {
-                props.setDealer(d);
+                setDealer(d); 
               }}
             />
           ))}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const DealerInfo = (props) => {
+  
 const {setDealer} = props
   return (
     <div className="car-container">
@@ -26,7 +27,8 @@ const {setDealer} = props
                 <div className="details">
                   <h3>2020 {t.name.toUpperCase()}</h3>
                   <p>Starting at {t.price}</p>
-                  <button className="request-btn">Request Quote</button>
+                  <button onClick={() => console.log("A function runs that POSTS req.use")} className="request-btn">Request Quote</button>
+                  <hr />
                 </div>
               </div>
             ))}{' '}
@@ -37,7 +39,7 @@ const {setDealer} = props
             <span><h5>There are no options for {props.location}</h5></span>
         </div>
       )}
-      <button  className="reset request-btn" onClick={() => setDealer(null)}>Reset</button>
+      <button  className="reset request-btn" onClick={() => setDealer(null)}>Clear Selection</button>
     </div>
   );
 };

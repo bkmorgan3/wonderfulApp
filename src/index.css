@@ -123,3 +123,31 @@ code {
 .reset {
   margin-top: 3px
 }
+
+
+/* 
+////////// MOBILE VIEW ///////////
+*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .nav-container {
+    display: block
+  }
+  .left-half {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-half, .logo {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: 700;
+    width: 50%
+  }
+}
