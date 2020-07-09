@@ -15,6 +15,7 @@ const {setDealer} = props
                 style={{
                   // margin: '10px',
                   display: 'flex',
+                  marginBottom: '5px'
                 }}
               >
                 <div className="car-detail">
