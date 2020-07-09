@@ -28,7 +28,7 @@ const {setDealer} = props
                   <h3>2020 {t.name.toUpperCase()}</h3>
                   <p>Starting at {t.price}</p>
                   <button onClick={() => console.log("A function runs that POSTS req.use")} className="request-btn">Request Quote</button>
-                  <hr />
+                  <hr className="divider" />
                 </div>
               </div>
             ))}{' '}
