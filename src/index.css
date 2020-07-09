@@ -9,11 +9,16 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 .App {
   max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  /* background-color: #f5f5f0; */
 }
 
 .nav-container {
@@ -67,19 +72,19 @@ code {
   width: 40px;
 }
 
+
 .map-container {
   display: flex;
-  width: 50%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  
 }
 
-.mapdiv {
-  width: 700px;
-  height: 100%;
-}
 
 .map-area {
   display: flex;
-
   width: 600px;
 }
 
@@ -102,6 +107,19 @@ code {
   border-radius: 3px;
 }
 
+.request-btn:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
 .car-container {
-  height: 300px;
+  /* height: 100%;/ */
+  position: absolute;
+  top: 20;
+  right: 15px;
+}
+
+
+.reset {
+  margin-top: 3px
 }

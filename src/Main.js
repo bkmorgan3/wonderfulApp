@@ -3,7 +3,7 @@ import MyCarousel from './Carousel';
 import MapContainer from './MapContainer';
 
 const Main = () => (
-  <div>
+  <div className="main-container">
     <MyCarousel />
     <MapContainer />
   </div>

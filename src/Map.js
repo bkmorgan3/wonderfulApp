@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   GoogleMap,
   withScriptjs,
   withGoogleMap,
   Marker,
-  InfoWindow,
 } from 'react-google-maps';
 
 import data from './data/data.json';
 
 function Map(props) {
-  console.log('Mapprops', props);
   return (
     <div className="map-area">
       <div>

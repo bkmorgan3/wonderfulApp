@@ -1,17 +1,18 @@
 import React from 'react';
 
 const DealerInfo = (props) => {
+const {setDealer} = props
   return (
     <div className="car-container">
       {props.trims.length ? (
-        <div>
+        <div className="results" >
           <h4>Availability for {props.location}</h4>
           <div>
             {props.trims.map((t) => (
-              <div
+              <div 
                 key={t.id}
                 style={{
-                  margin: '10px',
+                  // margin: '10px',
                   display: 'flex',
                 }}
               >
@@ -32,10 +33,11 @@ const DealerInfo = (props) => {
           </div>
         </div>
       ) : (
-        <div>
-          <h4>There are no options for {props.location}</h4>
+        <div className="results">
+            <span><h5>There are no options for {props.location}</h5></span>
         </div>
       )}
+      <button  className="reset request-btn" onClick={() => setDealer(null)}>Reset</button>
     </div>
   );
 };

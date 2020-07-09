@@ -6,14 +6,15 @@ require('dotenv').config();
 
 function MapContainer() {
   const [dealer, setDealer] = useState(null);
+
   return (
     <div className="map-container">
       <WrappedMap
         setDealer={setDealer}
         loadingElement={<div style={{ height: `100%` }} />}
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
-        containerElement={<div style={{ height: `400px` }} />}
-        mapElement={<div className="mapdiv" />}
+        containerElement={<div style={{ height: `700px` }} />}
+        mapElement={<div style={{height: `100%`, width: `700px`}} />}
       />
 
       {dealer && (
@@ -22,6 +23,7 @@ function MapContainer() {
           trims={dealer.trims}
           price={dealer.price}
           id={dealer.id}
+          setDealer={setDealer}
         />
       )}
     </div>
