@@ -130,9 +130,7 @@ code {
 */
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+  
   .nav-container {
     display: block
   }
@@ -146,8 +144,25 @@ code {
   .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-size: 2em;
     font-weight: 700;
-    width: 50%
   }
+
+  .carousel {
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    position: static
+  }
+  .car-container {
+    position: static;
+    width: 100%
+  }
+  
 }

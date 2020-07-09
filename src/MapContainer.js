@@ -13,7 +13,7 @@ function MapContainer() {
         setDealer={setDealer}
         loadingElement={<div style={{ height: `100%` }} />}
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
-        containerElement={<div style={{ height: `700px` }} />}
+        containerElement={<div className="mappdiv" style={{ height: `700px` }} />}
         mapElement={<div style={{height: `100%`, width: `700px`}} />}
       />
 

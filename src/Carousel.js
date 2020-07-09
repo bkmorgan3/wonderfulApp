@@ -7,11 +7,13 @@ import imageTwo from './assets/ls-hybrid.jpg';
 import imageThree from './assets/ls.jpg';
 
 const MyCarousel = () => (
-  <Carousel centered infinite arrows slidesPerPage={2}>
+  
+    <Carousel className="carousel"  centered infinite arrows slidesPerPage={2}>
     <img src={imageOne} alt="black car" />
     <img src={imageTwo} alt="red car" />
     <img src={imageThree} alt="white car" />
   </Carousel>
+
 );
 
 export default MyCarousel;
