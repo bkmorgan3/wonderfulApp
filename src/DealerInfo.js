@@ -27,7 +27,7 @@ const {setDealer} = props
                 <div className="details">
                   <h3>2020 {t.name.toUpperCase()}</h3>
                   <p>Starting at {t.price}</p>
-                  <button onClick={() => console.log("A function runs that POSTS req.use")} className="request-btn">Request Quote</button>
+                  <button onClick={(e) =>  e.target.innerHTML = "Email sent"} className="request-btn">Request Quote</button>
                   <hr className="divider" />
                 </div>
               </div>
